@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YemekSitem.BannerImage.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            background-color: #3399FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: red;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/BannerImage/adminBanner.png" Width="700px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;<div style="width: 200px; float: left; height: auto; " class="auto-style2">
+            <table class="auto-style1">
+                <tr>
+                    <td><strong>MENÜLER</strong></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>KATEGORİLER</td>
+                </tr>
+                <tr>
+                    <td>YEMEKLER</td>
+                </tr>
+                <tr>
+                    <td>YORUMLAR</td>
+                </tr>
+                <tr>
+                    <td>MESAJLAR</td>
+                </tr>
+                <tr>
+                    <td>GÜNÜN YEMEĞİ</td>
+                </tr>
+                <tr>
+                    <td>ÖNERİLER</td>
+                </tr>
+                <tr>
+                    <td>HAKKIMIZDA</td>
+                </tr>
+            </table>
+            <br />
+            </div>
+            <div style="width: 450px; float: left; height: auto; background-color: red; margin-left: 50px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="Server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
+
